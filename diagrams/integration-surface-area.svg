@@ -1,0 +1,55 @@
+<svg viewBox="0 0 700 550" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Integration Surface Area</text>
+  <text x="350" y="46" text-anchor="middle" font-size="11" fill="#777">The kernel is ~15% of the work. Everything else is below the waterline.</text>
+
+  <!-- Water line -->
+  <line x1="50" y1="160" x2="650" y2="160" stroke="#2E86AB" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="660" y="155" font-size="10" fill="#2E86AB" font-weight="bold">waterline</text>
+
+  <!-- Above water: The kernel (visible part) -->
+  <polygon points="250,70 450,70 480,155 220,155" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="350" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#1E8449">Kernel</text>
+  <text x="350" y="118" text-anchor="middle" font-size="10" fill="#1E8449">Implementation</text>
+  <text x="350" y="140" text-anchor="middle" font-size="18" font-weight="bold" fill="#1E8449">~15%</text>
+
+  <!-- Below water: The integration iceberg -->
+  <polygon points="220,165 480,165 560,490 140,490" fill="#EBF5FB" stroke="#2E86AB" stroke-width="1.5"/>
+
+  <!-- Integration cost layers -->
+  <text x="350" y="195" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">Data Marshalling &amp; Memory Mgmt</text>
+  <text x="350" y="210" text-anchor="middle" font-size="9" fill="#2C3E50">DMA buffers, serialization, zero-copy optimization</text>
+
+  <line x1="230" y1="225" x2="470" y2="225" stroke="#AAD4E6" stroke-width="0.5"/>
+
+  <text x="350" y="248" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">Error Handling &amp; Fallback</text>
+  <text x="350" y="263" text-anchor="middle" font-size="9" fill="#2C3E50">CPU fallback path, device failure modes, health checks</text>
+
+  <line x1="220" y1="278" x2="480" y2="278" stroke="#AAD4E6" stroke-width="0.5"/>
+
+  <text x="350" y="301" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">Testing Infrastructure</text>
+  <text x="350" y="316" text-anchor="middle" font-size="9" fill="#2C3E50">Bit-exact comparison, perf regression, fault injection</text>
+
+  <line x1="210" y1="331" x2="490" y2="331" stroke="#AAD4E6" stroke-width="0.5"/>
+
+  <text x="350" y="354" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">CI/CD &amp; Deployment</text>
+  <text x="350" y="369" text-anchor="middle" font-size="9" fill="#2C3E50">Bitstream versioning, device provisioning, rollback</text>
+
+  <line x1="195" y1="384" x2="505" y2="384" stroke="#AAD4E6" stroke-width="0.5"/>
+
+  <text x="350" y="407" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">Observability</text>
+  <text x="350" y="422" text-anchor="middle" font-size="9" fill="#2C3E50">Custom metrics, boundary logging, canary records</text>
+
+  <line x1="180" y1="437" x2="520" y2="437" stroke="#AAD4E6" stroke-width="0.5"/>
+
+  <text x="350" y="460" text-anchor="middle" font-size="12" font-weight="bold" fill="#1A5276">Team Ramp-Up &amp; Maintenance</text>
+  <text x="350" y="475" text-anchor="middle" font-size="9" fill="#2C3E50">Documentation, training, ongoing dual-path maintenance</text>
+
+  <!-- ~85% label -->
+  <text x="590" y="340" font-size="22" font-weight="bold" fill="#1A5276">~85%</text>
+  <line x1="575" y1="320" x2="510" y2="300" stroke="#1A5276" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Caption -->
+  <text x="350" y="525" text-anchor="middle" font-size="10" fill="#555" font-style="italic">"Getting the kernel working is the beginning, not the end."</text>
+  <text x="350" y="543" text-anchor="middle" font-size="9" fill="#999">See docs/integration-cost-model.md for the full taxonomy</text>
+</svg>

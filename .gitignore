@@ -1,0 +1,26 @@
+# Build artifacts
+examples/cpu-vs-fpga-bitpack/bitpack
+*.o
+*.out
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Generated plots
+*.png
+!tools/*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
